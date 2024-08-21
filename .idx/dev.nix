@@ -50,7 +50,7 @@
       # Runs when the workspace is (re)started
       onStart = {
         # Example: start a background task to watch and re-build backend code
-        docker = "docker run -it --rm --platform linux/amd64 --name codepath-cyb-101 -v $(pwd):/home/codepath/code -p 22:22 -p 3389:3389 codepathdockerhub/cyber:cyb-101"; 
+        docker = "docker pull codepathdockerhub/cyber:cyb-101 && docker run -it --rm --platform linux/amd64 --name codepath-cyb-101 -v $(pwd):/home/codepath/code -p 22:22 -p 3389:3389 codepathdockerhub/cyber:cyb-101"; 
       };
     };
   };
